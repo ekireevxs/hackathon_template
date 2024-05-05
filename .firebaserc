@@ -1,0 +1,8 @@
+{
+	"projects": {
+		"livedemo-hackathon": "livedemo-hackathon",
+		"default": "livedemo-hackathon"
+	},
+	"targets": {},
+	"etags": {}
+}

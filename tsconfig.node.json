@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "nodenext",
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    "vite.config.ts"
+  ]
+}
