@@ -1,0 +1,18 @@
+stages:
+  - deploy
+
+.common-deploy:
+  image: registry.srv.local/dh-proxy/library/node:20.9.0
+  stage: deploy
+  when: manual
+  before_script:
+    - npm i
+    - cd ./functions
+    - npm i
+    - cd ..
+
+deploy to stage:
+  extends: .common-deploy
+  script:
+    - ./node_modules/.bin/firebase use --token $FIREBASE_TOKEN default
+    - npm run deploy
